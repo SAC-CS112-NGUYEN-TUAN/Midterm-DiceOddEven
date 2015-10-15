@@ -40,10 +40,12 @@ public class DiceOddEven {
 		if (guess.equals("even")){
 			evenguess++; 
 			evenpercent = evenguess*100/count;
+			oddpercent = 100 - evenpercent;
 			System.out.println(evenpercent);//debugg
 		}
 		if (guess.equals("odd")) {oddguess++;
 			oddpercent = oddguess*100/count;
+			evenpercent = 100 - oddpercent;
 			System.out.println(oddpercent);//debugg
 		}
 		
